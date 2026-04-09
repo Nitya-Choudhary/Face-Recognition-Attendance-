@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DevOps Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+    <script defer src="face.js"></script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <div class="header">
+        My DevOps Status
+    </div>
+
+    <!-- PROFILE CARD -->
+    <div class="card profile">
+        <div class="avatar"></div>
+        <div>
+            <h2>Nitya Choudhary</h2>
+            <p>Enrollment: 09401032024</p>
+            <p>Branch: IT | Sem: 4</p>
+        </div>
+    </div>
+
+    <!-- ATTENDANCE -->
+    <div class="card">
+        <h3>Attendance Progress</h3>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+
+        <!-- FACE BUTTON -->
+        <button onclick="startRecognition()">
+            Mark Attendance (Face Recognition)
+        </button>
+
+        <!-- VIDEO -->
+        <video id="video" autoplay muted></video>
+    </div>
+
+</body>
+</html>
