@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+    background: #f5f5f5;
+}
+
+.header {
+    background: purple;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.card {
+    background: #f8eafc;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px;
+    background: orange;
+    border: none;
+    color: white;
+}
+
+video {
+    width: 300px;
+    margin-top: 10px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: #ddd;
+}
+
+#progress {
+    height: 100%;
+    background: blue;
+    width: 0%;
+}
