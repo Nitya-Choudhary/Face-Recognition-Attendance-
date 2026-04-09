@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Analytics</title>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<h2>Attendance Analytics</h2>
+
+<canvas id="chart"></canvas>
+
+<script>
+const ctx = document.getElementById('chart');
+
+new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: ['Week1','Week2','Week3'],
+        datasets: [{
+            label: 'Attendance %',
+            data: [80, 60, 90]
+        }]
+    }
+});
+</script>
+
+</body>
+</html>
