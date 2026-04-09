@@ -1,45 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>DevOps Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>DevOps Dashboard</title>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
-    <script defer src="face.js"></script>
+<link rel="stylesheet" href="style.css">
+
+<script defer src="https://cdn.jsdelivr.net/npm/face-api.js"></script>
+<script defer src="face.js"></script>
+<script defer src="app.js"></script>
+
 </head>
 <body>
 
-    <!-- HEADER -->
-    <div class="header">
-        My DevOps Status
+<!-- HEADER -->
+<div class="header">
+    My DevOps Status
+</div>
+
+<!-- PROFILE -->
+<div class="card profile">
+    <div class="avatar"></div>
+    <div>
+        <h2>Nitya Choudhary</h2>
+        <p>Enrollment: 09401032024</p>
+        <p>Branch: IT | Sem: 4</p>
+    </div>
+</div>
+
+<!-- ATTENDANCE -->
+<div class="card">
+    <h3>Attendance Progress</h3>
+    <div class="progress-bar">
+        <div class="progress" id="progress"></div>
     </div>
 
-    <!-- PROFILE CARD -->
-    <div class="card profile">
-        <div class="avatar"></div>
-        <div>
-            <h2>Nitya Choudhary</h2>
-            <p>Enrollment: 09401032024</p>
-            <p>Branch: IT | Sem: 4</p>
-        </div>
+    <button onclick="startRecognition()">Mark Attendance (Face)</button>
+
+    <video id="video" autoplay muted></video>
+</div>
+
+<!-- ASSIGNMENTS -->
+<div class="card">
+    <h3>Assignment Submissions</h3>
+
+    <div class="assignment">
+        Assignment 1 <span class="submitted">Submitted</span>
     </div>
 
-    <!-- ATTENDANCE -->
-    <div class="card">
-        <h3>Attendance Progress</h3>
-        <div class="progress-bar">
-            <div class="progress"></div>
-        </div>
-
-        <!-- FACE BUTTON -->
-        <button onclick="startRecognition()">
-            Mark Attendance (Face Recognition)
-        </button>
-
-        <!-- VIDEO -->
-        <video id="video" autoplay muted></video>
+    <div class="assignment">
+        Assignment 2 <span class="submitted">Submitted</span>
     </div>
+
+    <div class="assignment">
+        Assignment 3 <span class="pending">Pending</span>
+    </div>
+</div>
+
+<!-- MARKS -->
+<div class="card">
+    <h3>Marks</h3>
+
+    <div class="marks">Mid Term: <span id="mid">--</span></div>
+    <div class="marks">End Term: <span id="end">--</span></div>
+    <div class="marks">Practical: <span id="prac">--</span></div>
+    <div class="marks">CAP: <span id="cap">--</span></div>
+
+    <div class="marks total">
+        Total: <span id="total">0</span>
+    </div>
+</div>
+
+<!-- COMMENTS -->
+<div class="card">
+    <h3>Feedback</h3>
+
+    <textarea id="feedback" placeholder="Enter feedback (max 50 words)"></textarea>
+    <button onclick="submitFeedback()">Submit</button>
+</div>
+
+<!-- ANALYTICS BUTTON -->
+<div class="card center">
+    <button onclick="goToAnalytics()">View Analytics Dashboard</button>
+</div>
 
 </body>
 </html>

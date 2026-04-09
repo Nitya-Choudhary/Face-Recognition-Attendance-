@@ -16,7 +16,7 @@ body {
 /* CARD */
 .card {
     background: #f8eafc;
-    margin: 20px;
+    margin: 15px;
     padding: 20px;
     border-radius: 15px;
 }
@@ -24,7 +24,6 @@ body {
 /* PROFILE */
 .profile {
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 
@@ -41,30 +40,57 @@ body {
     height: 10px;
     background: #ddd;
     border-radius: 10px;
-    margin: 10px 0;
 }
 
 .progress {
     width: 0%;
     height: 100%;
     background: #42a5f5;
-    border-radius: 10px;
 }
 
 /* BUTTON */
 button {
-    background: #ff7043;
+    margin-top: 10px;
+    padding: 10px;
     border: none;
-    padding: 10px 20px;
+    background: #ff7043;
     color: white;
     border-radius: 10px;
-    cursor: pointer;
 }
 
 /* VIDEO */
 video {
     width: 100%;
     max-width: 400px;
-    margin-top: 15px;
-    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* ASSIGNMENTS */
+.assignment {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.submitted {
+    color: green;
+}
+
+.pending {
+    color: red;
+}
+
+/* MARKS */
+.marks {
+    margin: 5px 0;
+}
+
+.total {
+    font-weight: bold;
+}
+
+/* TEXTAREA */
+textarea {
+    width: 100%;
+    height: 80px;
 }
